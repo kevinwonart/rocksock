@@ -17,11 +17,17 @@ export class MainMenu extends Scene
 
         this.logo = this.add.image(512, 300, 'logo');
 
-        this.title = this.add.text(512, 460, 'Main Menu', {
-            fontFamily: 'Arial Black', fontSize: 38, color: '#ffffff',
-            stroke: '#000000', strokeThickness: 8,
-            align: 'center'
-        }).setOrigin(0.5);
+        this.logo = this.add.image(512, 460, 'rock0');
+
+        /*
+        this.input.on('pointerdown', (pointer: Phaser.Input.Pointer) => {
+            // Create a rock sprite at the pointer location
+            const rock = this.physics.add.sprite(pointer.x, pointer.y, 'x');
+
+            // Optionally, set some physics properties
+            rock.setCollideWorldBounds(true); // Make it collide with the world bounds
+        });
+        */
 
         this.input.once('pointerdown', () => {
 

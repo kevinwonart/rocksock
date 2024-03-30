@@ -21,7 +21,8 @@
         "noUnusedLocals": true,
         "noUnusedParameters": true,
         "noFallthroughCasesInSwitch": true,
-        "strictPropertyInitialization": false
+        "strictPropertyInitialization": false,
+        //"noImplicitAny": false
     },
     "include": [
         "src"
